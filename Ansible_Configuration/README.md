@@ -13,8 +13,13 @@ Benefits of ansible include:
 
 
 ## Ansible dependencies 
-- python 2.7 or above
-- Ansible repo link
-- install ansible
+- `sudo apt-get install software-properties-common`
+- python 2.7 or above 
+- Ansible repo link (`sudo apt-add-repository ppa:ansible/ansible`)
+
+
+- install ansible (`sudo apt-get install ansible -y`)
+
+
 - update & upgrade
 **ONLY FOR CONTROLLER BECAUSE ANSIBLE IS AGENTLESS**
