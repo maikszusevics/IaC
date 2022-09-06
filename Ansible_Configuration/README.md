@@ -43,6 +43,8 @@ Run playbook with: `ansible-playbook nginx-play.yml`
 
 - Three dashes `---` starts the file
 
+- `-vvv` gives a lot more log info
+
 
 ### Playbook to do reverse proxy
 ```
