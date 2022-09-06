@@ -45,6 +45,7 @@ Run playbook with: `ansible-playbook nginx-play.yml`
 
 - `-vvv` gives a lot more log info
 
+- adding `--syntax-check` on the end of the `ansible-playbook` command performs syntax check
 
 ### Playbook to do reverse proxy
 ```
