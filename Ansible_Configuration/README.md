@@ -34,3 +34,19 @@ for example you can use this command to copy a file from controller to an agent:
 ## Ansible playbooks:
 
 Run playbook with: `ansible-playbook nginx-play.yml`
+
+### Playbook which installs nginx on agent machines:
+
+- Create a .YML file
+![image](https://user-images.githubusercontent.com/110176257/188586929-ed3f17b4-4a73-40d1-9367-f30f1a1a423d.png)
+
+- Three dashes `---` starts the file
+
+### Playbook to do reverse proxy
+![image](https://user-images.githubusercontent.com/110176257/188588007-66d6e88b-ff12-4e93-81ef-a4006ce3ee84.png)
+
+### Playbook to install nodejs
+![image](https://user-images.githubusercontent.com/110176257/188588434-df603570-aa95-42f0-bba1-3620444d78ce.png)
+
+### Playbook to copy app files
+![image](https://user-images.githubusercontent.com/110176257/188588654-57a5934c-0467-460d-be01-175fb5196368.png)
