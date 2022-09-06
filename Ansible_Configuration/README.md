@@ -45,7 +45,22 @@ Run playbook with: `ansible-playbook nginx-play.yml`
 
 
 ### Playbook to do reverse proxy
-
+```
+# add hosts or name of host (web)
+- hosts: web
+# gather information live
+# indentation is very big
+  gather_facts: yes
+# we need admin perms
+  become: true
+# add the instructions
+  tasks:
+  - name: copy rev prox file
+    copy:
+      src: /etc/ansible/revprox
+      dest: /etc/nginx/sites-available/default
+      
+```
 ![image](https://user-images.githubusercontent.com/110176257/188588007-66d6e88b-ff12-4e93-81ef-a4006ce3ee84.png)
 
 ### Playbook to install nodejs
