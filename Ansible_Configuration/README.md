@@ -55,3 +55,7 @@ Run playbook with: `ansible-playbook nginx-play.yml`
 ### Playbook to copy app files
 
 ![image](https://user-images.githubusercontent.com/110176257/188588654-57a5934c-0467-460d-be01-175fb5196368.png)
+
+#### Running clone playbook:
+
+![image](https://user-images.githubusercontent.com/110176257/188589114-81bb4cc5-7203-4a21-8c2c-31dc7959794b.png)
