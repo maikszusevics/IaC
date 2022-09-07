@@ -120,6 +120,8 @@ encrypt AWS keys
 automate ssh key access
 copy eng122.pem and generate anothe keypair called eng122
 
+Create directory `/etc/ansible/group_vars/all`
+
 in the playbook copy the .pub file to ec2
 
 `sudo ansible-vault create pass.yml` 
@@ -132,6 +134,7 @@ Type `aws_access_key: XXXXXXXX` `aws_secret_key: XXXXXXXX`
 `esc` then `:` then `wq!` and `enter` to save
 
 install python 3, pip, and awscli dependendies using `apt` and `pip3`
+
 
 
 ## Creating an amazon ec2 instace using ansible controller
