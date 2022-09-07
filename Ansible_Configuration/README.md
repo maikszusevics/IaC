@@ -77,6 +77,8 @@ Run playbook with: `ansible-playbook nginx-play.yml`
       dest: /etc/nginx/sites-available/default
       
 ```
+- To make the rev proxy playbook I made a nginx config file in my controller machine which has the details for reverse proxy, then used the built-in copy module in ansible to overwrite the default `default` file in `/etc/nginx/sites-available/`
+
 ![image](https://user-images.githubusercontent.com/110176257/188588007-66d6e88b-ff12-4e93-81ef-a4006ce3ee84.png)
 
 ### Playbook to install nodejs
