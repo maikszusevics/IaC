@@ -31,6 +31,19 @@ ad-hoc commands allow us to run commands and get the response without SSHing int
 for example you can use this command to copy a file from controller to an agent:
 `ansible web -m ansible.builtin.copy -a "src=/etc/ansible/test.txt dest=/home/vagrant/copyfold"`
 
+- `web` is the name of the group/machine we wish to run this command on
+- `-m` stand for module, in the above command we use the built-in ansible copy modudle.
+- `-a` stands for argument, after this you put the argument.
+
+another example:
+
+`sudo ansible web -m shell -a "systemctl status nginx"`
+
+In this example we are using the `shell` module which allows us to run normal linux commands as we would type them in the shell of the machine.
+
+So after the `-a` our argument is the shell command we wish to run.
+
+
 ## Ansible playbooks:
 
 Run playbook with: `ansible-playbook nginx-play.yml`
