@@ -83,6 +83,8 @@ Run playbook with: `ansible-playbook nginx-play.yml`
 
 ### Playbook to install nodejs
 
+- Here I use the `shell` module again to run the curl command in order to download the specific version of NodeJs that I want
+
 ![image](https://user-images.githubusercontent.com/110176257/188588434-df603570-aa95-42f0-bba1-3620444d78ce.png)
 
 ### Playbook to copy app files
