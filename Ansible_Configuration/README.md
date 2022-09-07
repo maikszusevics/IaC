@@ -107,6 +107,8 @@ After installing python 3, run command `alias python=python3` to set new python 
 
 to install pip3 run `sudo apt-get install python3-pip`
 
+to get awscli run `pip3 install awscli `
+
 ansivle vault folder structure:
 
 `/etc/ansible/group_vars/all/file.yml`
