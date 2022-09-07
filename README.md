@@ -12,4 +12,4 @@
 - can do hybrid cloud with ansible 
 
 
-![image](https://user-images.githubusercontent.com/110176257/188426540-5f0b89ce-297a-4565-a983-aba40eb60ddd.png)
+![image](https://user-images.githubusercontent.com/110176257/188832504-92b26bad-ba8a-480a-ac56-1819210c6514.png)
