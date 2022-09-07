@@ -197,7 +197,7 @@ Ansible playbook completed to create ec2 instance:
           instance_type: t2.micro
           region: "{{ region }}"
           wait: true
-          count: 2
+          count: 1
           instance_tags:
             Name: eng122_maiks_ansible
 
