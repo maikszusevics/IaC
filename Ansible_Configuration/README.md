@@ -103,6 +103,8 @@ dependencies:
 - pip3
 - awscli
 
+After installing python 3, run command `alias python=python3` to set new python version
+
 ansivle vault folder structure:
 
 `/etc/ansible/group_vars/all/file.yml`
