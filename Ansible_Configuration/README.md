@@ -105,6 +105,8 @@ dependencies:
 
 After installing python 3, run command `alias python=python3` to set new python version
 
+to install pip3 run `sudo apt-get install python3-pip`
+
 ansivle vault folder structure:
 
 `/etc/ansible/group_vars/all/file.yml`
