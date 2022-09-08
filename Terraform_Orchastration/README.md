@@ -46,6 +46,12 @@ Then you can run `choco install terraform` from **admin powershell** and install
 HashiCorp Configuration Language (HCL) is a unique configuration language. It was designed to be used with HashiCorp tools, notably Terraform, but HCL has expanded as a more general configuration language. It's visually similar to JSON with additional data structures and capabilities built-in.
 
 
+# Example
+
+
+![teraform](https://user-images.githubusercontent.com/110176257/189125340-2de2de8a-819b-4366-addf-8183a3ef9d2d.png)
+
+
 
 ## Commands
 
