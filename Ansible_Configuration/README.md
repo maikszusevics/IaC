@@ -92,6 +92,14 @@ Run playbook with: `ansible-playbook nginx-play.yml`
 ![image](https://user-images.githubusercontent.com/110176257/188589114-81bb4cc5-7203-4a21-8c2c-31dc7959794b.png)
 
 
+# Ansible on AWS
+
+### Moving pem key to AWS
+
+Open pem key in notepad and copy content to `~/.ssh` folder.
+
+Generate private and public ssh key in .ssh folder using `ssh-keygen -t rsa -b 4096`
+
 ## Ansible vault
 
 dependencies:
@@ -189,4 +197,16 @@ Ansible playbook completed to create ec2 instance:
             Name: eng122_maiks_ansible
 
       tags: ['never', 'create_ec2']
+```
+
+
+
+After creating ec2 instances from the controller, add their IPs to the hosts file in `/etc/ansible/hosts`
+
+```yml
+[app]
+ec2-instance ansible_host=172.31.29.219 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/.ssh/eng122_maiks_key
+
+[db]
+ec2-instance ansible_host=172.31.31.46 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/.ssh/eng122_maiks_key
 ```
