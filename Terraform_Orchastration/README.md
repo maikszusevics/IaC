@@ -1,6 +1,6 @@
 # Terraform
 
-Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.
+Terraform is an open-source Infrastructure as Code (IaC) tool that was developed as an infrastructure orchestrator designed to build, change, and version cloud and local resources safely and efficiently.
 
 ## What can Terraform do?
 - Terraform can manage infrastructure on multiple cloud platforms.
@@ -45,6 +45,9 @@ Then you can run `choco install terraform` from **admin powershell** and install
 
 HashiCorp Configuration Language (HCL) is a unique configuration language. It was designed to be used with HashiCorp tools, notably Terraform, but HCL has expanded as a more general configuration language. It's visually similar to JSON with additional data structures and capabilities built-in.
 
+# Orchestration with terraform
+
+Orchestration is the automated configuration, management, and coordination of interconnected systems, applications, and services. Orchestration helps organisations to more easily manage complex tasks and workflows.
 
 # Example
 
