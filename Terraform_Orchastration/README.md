@@ -56,13 +56,13 @@ HashiCorp Configuration Language (HCL) is a unique configuration language. It wa
 ## Commands
 
 - `terraform init`
-intitialises terraform 
+intitialises terraform, prepares your working directory for other commands
 
 - `terraform plan`
-
+Find, perpare, and show changes required by the current configuration
 
 - `terraform apply`
-runs the .tf file and creates any resources/infrastructure coded in it
+runs the .tf file and creates/updates any infrastructure in the file
 
 - `terraform destroy`
-destroys infrastructure created by terraform apply
+destroys previously-created infrastructure
