@@ -29,6 +29,8 @@ Then you can run `choco install terraform` from **admin powershell** and install
 
 ## Benefits of Terraform 
 
+- Open source and lightweight
+- HCL configuration language
 - Human readable configuration language helps write infrastructure code
 - Many plugins that let Terraform interact with cloud platforms via APIs
 - Allows for use of resources from multiple different providers in the same resusable configurations
@@ -39,3 +41,6 @@ Then you can run `choco install terraform` from **admin powershell** and install
 
 ### Terraform language
 
+**HCL**
+
+HashiCorp Configuration Language (HCL) is a unique configuration language. It was designed to be used with HashiCorp tools, notably Terraform, but HCL has expanded as a more general configuration language. It's visually similar to JSON with additional data structures and capabilities built-in.
