@@ -77,9 +77,13 @@ Run playbook with: `ansible-playbook nginx-play.yml`
       dest: /etc/nginx/sites-available/default
       
 ```
+- To make the rev proxy playbook I made a nginx config file in my controller machine which has the details for reverse proxy, then used the built-in copy module in ansible to overwrite the default `default` file in `/etc/nginx/sites-available/`
+
 ![image](https://user-images.githubusercontent.com/110176257/188588007-66d6e88b-ff12-4e93-81ef-a4006ce3ee84.png)
 
 ### Playbook to install nodejs
+
+- Here I use the `shell` module again to run the curl command in order to download the specific version of NodeJs that I want
 
 ![image](https://user-images.githubusercontent.com/110176257/188588434-df603570-aa95-42f0-bba1-3620444d78ce.png)
 
@@ -107,6 +111,12 @@ dependencies:
 - pip3
 - awscli
 
+After installing python 3, run command `alias python=python3` to set new python version
+
+to install pip3 run `sudo apt-get install python3-pip`
+
+to get awscli run `pip3 install awscli `
+
 ansivle vault folder structure:
 
 `/etc/ansible/group_vars/all/file.yml`
@@ -117,6 +127,8 @@ encrypt AWS keys
 
 automate ssh key access
 copy eng122.pem and generate anothe keypair called eng122
+
+Create directory `/etc/ansible/group_vars/all`
 
 in the playbook copy the .pub file to ec2
 
@@ -130,6 +142,7 @@ Type `aws_access_key: XXXXXXXX` `aws_secret_key: XXXXXXXX`
 `esc` then `:` then `wq!` and `enter` to save
 
 install python 3, pip, and awscli dependendies using `apt` and `pip3`
+
 
 
 ## Creating an amazon ec2 instace using ansible controller
@@ -192,7 +205,7 @@ Ansible playbook completed to create ec2 instance:
           instance_type: t2.micro
           region: "{{ region }}"
           wait: true
-          count: 2
+          count: 1
           instance_tags:
             Name: eng122_maiks_ansible
 
