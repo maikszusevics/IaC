@@ -3,6 +3,9 @@
 ---
 Infrastructure as code (IaC) tools allow you to manage infrastructure with configuration files rather than through a graphical user interface. IaC allows you to build, change, and manage your infrastructure in a safe, consistent, and repeatable way by defining resource configurations that you can version, reuse, and share.
 
+![image](https://user-images.githubusercontent.com/110176257/189355743-655a01ac-a3d0-4e32-819e-b4c047f73523.png)
+
+
 ## Ansible
 - we use for configuration management
 - agentless (agents dont need ansible)
