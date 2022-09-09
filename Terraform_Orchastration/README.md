@@ -59,7 +59,9 @@ Orchestration is the automated configuration, management, and coordination of in
 ## Commands
 
 - `terraform init`
-intitialises terraform, prepares your working directory for other commands
+intitialises terraform, prepares your working directory for other commands.
+
+Downloads the dependencies of the provider specified in the .tf file.
 
 - `terraform plan`
 Find, perpare, and show changes required by the current configuration
